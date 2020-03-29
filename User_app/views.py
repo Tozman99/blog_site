@@ -43,7 +43,7 @@ def User_Registration_View(request):
 			#return redirect("login")
 			return HttpResponseRedirect("../login")
 
-		return render(request, "registration/signup.html", {"form":form})
+	return render(request, "registration/signup.html", {"form":form})
  
 	
 	#else:
