@@ -1,0 +1,25 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<form method="POST">
+	
+	{% csrf_token %}
+	{{form_search.as_p}}
+
+	<button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="{% url 'Post_app:search_post' %}">Search</button>
+</form>
+
+{% if objects is not None %}
+	{% for object in objects %}
+
+		<p> <a href="{% url 'Post_app:Detail_Post' object.slug %}">{{object}}</a> </p>
+
+	{% endfor %}
+
+{% else %}
+	<p> there isn't any posts</p>
+
+{% endif %}
+
+{% endblock %}

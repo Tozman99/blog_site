@@ -1,0 +1,1442 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border-s",
+				"border-style\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"font-",
+				"font-style\tproperty"
+			],
+			[
+				"Pro",
+				"Profile"
+			],
+			[
+				"Co",
+				"Comment_Post"
+			],
+			[
+				"Commen",
+				"Comment_View"
+			],
+			[
+				"Comment",
+				"Comment_Form"
+			],
+			[
+				"gee",
+				"get_object_or_404"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"Comm",
+				"Comment_View"
+			],
+			[
+				"Pos",
+				"Post_Detail_View"
+			],
+			[
+				"Po",
+				"Post"
+			],
+			[
+				"C",
+				"Comment_Form"
+			],
+			[
+				"se",
+				"search_post"
+			],
+			[
+				"pos",
+				"postFormSet"
+			],
+			[
+				"mod",
+				"modelformset_factory"
+			],
+			[
+				"ob",
+				"get_object_or_404"
+			],
+			[
+				"Profile",
+				"Profile_Form"
+			],
+			[
+				"pa",
+				"password_change_done"
+			],
+			[
+				"Change_pas",
+				"Change_password_done"
+			],
+			[
+				"pass",
+				"password_rest"
+			],
+			[
+				"Post",
+				"Post_Form_DeleteView"
+			],
+			[
+				"reverse",
+				"reverse_lazy"
+			],
+			[
+				"P",
+				"Post_app"
+			],
+			[
+				"For",
+				"FormView"
+			],
+			[
+				"pro",
+				"profile_View"
+			],
+			[
+				"H",
+				"HttpResponseRedirect"
+			],
+			[
+				"p",
+				"profile_form"
+			],
+			[
+				"get",
+				"get_object_or_404"
+			],
+			[
+				"auth",
+				"auth_views"
+			],
+			[
+				"U",
+				"User_Registration_view"
+			],
+			[
+				"au",
+				"auth_views"
+			],
+			[
+				"User",
+				"UserCreationForm"
+			],
+			[
+				"De",
+				"DeleteView"
+			],
+			[
+				"T",
+				"Things_Delete_View"
+			],
+			[
+				"Things",
+				"Things_Create_View"
+			],
+			[
+				"Cre",
+				"CreateView"
+			],
+			[
+				"Ba",
+				"BASE_DIR"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "urls.py",
+			"settings":
+			{
+				"buffer_size": 1250,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/list.html",
+			"settings":
+			{
+				"buffer_size": 300,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/detail.html",
+			"settings":
+			{
+				"buffer_size": 1301,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 4690,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Post_app/views.py",
+			"settings":
+			{
+				"buffer_size": 3762,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/search_post.html",
+			"settings":
+			{
+				"buffer_size": 476,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Post_app/models.py",
+			"settings":
+			{
+				"buffer_size": 1283,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Post_app/admin.py",
+			"settings":
+			{
+				"buffer_size": 415,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/posts_list_user.html",
+			"settings":
+			{
+				"buffer_size": 318,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "{% extends \"base.html\"%}"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Post_app/forms.py",
+			"settings":
+			{
+				"buffer_size": 326,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/logout.html",
+			"settings":
+			{
+				"buffer_size": 91,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Post_app/urls.py",
+			"settings":
+			{
+				"buffer_size": 932,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/password_change.html",
+			"settings":
+			{
+				"buffer_size": 333,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/password_change_done.html",
+			"settings":
+			{
+				"buffer_size": 38,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/templates/registration/password_reset_complete.html",
+			"settings":
+			{
+				"buffer_size": 156,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/profile.html",
+			"settings":
+			{
+				"buffer_size": 540,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/createpost.html",
+			"settings":
+			{
+				"buffer_size": 264,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views.py",
+			"settings":
+			{
+				"buffer_size": 2450,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/signup.html",
+			"settings":
+			{
+				"buffer_size": 458,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/login.html",
+			"settings":
+			{
+				"buffer_size": 321,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/profile_other_user.html",
+			"settings":
+			{
+				"buffer_size": 285,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Blog/settings.py",
+			"settings":
+			{
+				"buffer_size": 3456,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Comment_app/forms.py",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Comment_app/urls.py",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tozman99/Desktop/Blog/Comment_app/models.py",
+			"settings":
+			{
+				"buffer_size": 58,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models.py",
+			"settings":
+			{
+				"buffer_size": 630,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "forms.py",
+			"settings":
+			{
+				"buffer_size": 410,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "admin.py",
+			"settings":
+			{
+				"buffer_size": 182,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/tozman99/Desktop/Blog",
+		"/home/tozman99/Desktop/Blog/Blog",
+		"/home/tozman99/Desktop/Blog/media",
+		"/home/tozman99/Desktop/Blog/media/photo_profile",
+		"/home/tozman99/Desktop/Blog/Post_app",
+		"/home/tozman99/Desktop/Blog/Post_app/templates",
+		"/home/tozman99/Desktop/Blog/Post_app/templates/Post_app",
+		"/home/tozman99/Desktop/Blog/templates",
+		"/home/tozman99/Desktop/Blog/templates/registration",
+		"/home/tozman99/Desktop/Blog/User_app",
+		"/home/tozman99/Desktop/Blog/User_app/templates",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration",
+		"/home/tozman99/Desktop/Blog/User_app/templates/User_app"
+	],
+	"file_history":
+	[
+		"/home/tozman99/Desktop/Blog/Blog/urls.py",
+		"/home/tozman99/Desktop/Blog/Post_app/migrations/0001_initial.py",
+		"/home/tozman99/Downloads/nopicture.jpeg",
+		"/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/search_post.py",
+		"/home/tozman99/Desktop/Blog/media/media/photo_profile/images_H49dewG.jpeg",
+		"/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/base.html",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/logout.html",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/profile.html",
+		"/home/tozman99/Desktop/Blog/templates/registration/password_reset_confirm.html",
+		"/home/tozman99/Desktop/Blog/Post_app/models.py",
+		"/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/post_delete.html",
+		"/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/post_update.html",
+		"/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/createpost.html",
+		"/home/tozman99/Desktop/Blog/Post_app/urls.py",
+		"/home/tozman99/Desktop/Blog/Post_app/forms.py",
+		"/home/tozman99/Desktop/Blog/User_app/urls.py",
+		"/home/tozman99/Desktop/Blog/templates/registration/password_reset_done.html",
+		"/home/tozman99/Desktop/Blog/templates/registration/password_reset_complete.html",
+		"/home/tozman99/Desktop/Blog/templates/registration/password_reset_form.html",
+		"/home/tozman99/Desktop/Blog/Post_app/views.py",
+		"/home/tozman99/Desktop/Blog/Post_app/admin.py",
+		"/home/tozman99/Desktop/Blog/User_app/models.py",
+		"/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/list.html",
+		"/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/detail.html",
+		"/home/tozman99/Desktop/Blog/User_app/views.py",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/password_reset_subject.txt",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/password_reset_email.html",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/password_reset_form.html",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/password_reset_done.html",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/password_reset_confirm.html",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/password_reset_complete.html",
+		"/home/tozman99/Desktop/Blog/templates",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/untitled",
+		"/home/tozman99/Desktop/Blog/Blog/settings.py",
+		"/home/tozman99/Desktop/Blog/Post_app/templates/base.html",
+		"/home/tozman99/Desktop/Blog/User_app/forms.py",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/login.html",
+		"/home/tozman99/Desktop/Blog/Blog_app/admin.py",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/wait_confirm.html",
+		"/home/tozman99/Desktop/Blog/User_app/admin.py",
+		"/home/tozman99/Desktop/Blog/User_app/templates/registration/signup.html",
+		"/home/tozman99/Desktop/Blog/User_app/templates/User_app/home.html",
+		"/home/tozman99/Desktop/Blog/User_app/templates/User_app/registration/login.html",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/forms.py",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/templates/base.html",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/templates/todo_theapp/delete.html",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/templates/todo_theapp/detail.html",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/urls.py",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/templates/todo_theapp/list.html",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/templates/todo_theapp/update.html",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/views.py",
+		"/home/tozman99/Desktop/todoApp/todoApp/urls.py",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/templates/todo_theapp/todo.html",
+		"/home/tozman99/Desktop/todoApp/todoApp/settings.py",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/admin.py",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/models.py",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/templates/todo_theapp/create.html",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/templates/delete.html",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/templates/todo_theapp/urls.py",
+		"/home/tozman99/Desktop/todoApp/todo_theapp/templates/todo_theapp/forms.py"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1250,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								404,
+								404
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								214
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/detail.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								871,
+								871
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 390.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/tozman99/Desktop/Blog/templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4690,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2286,
+								2286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1309.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/tozman99/Desktop/Blog/Post_app/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3654,
+								3654
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2001.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/search_post.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/tozman99/Desktop/Blog/Post_app/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								435,
+								435
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 362.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/tozman99/Desktop/Blog/Post_app/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								408,
+								408
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 72.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/posts_list_user.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								310
+							]
+						],
+						"settings":
+						{
+							"auto_name": "{% extends \"base.html\"%}",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/tozman99/Desktop/Blog/Post_app/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								278,
+								278
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "templates/registration/logout.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 91,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								55
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/home/tozman99/Desktop/Blog/Post_app/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 932,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								929,
+								929
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 32.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "templates/registration/password_change.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								333,
+								333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "templates/registration/password_change_done.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								38,
+								38
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/home/tozman99/Desktop/Blog/templates/registration/password_reset_complete.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133,
+								133
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "templates/registration/profile.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/home/tozman99/Desktop/Blog/Post_app/templates/Post_app/createpost.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								771,
+								771
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 368.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "templates/registration/signup.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								319,
+								319
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "templates/registration/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								185,
+								185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "templates/registration/profile_other_user.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/home/tozman99/Desktop/Blog/Blog/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								458,
+								458
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 37.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "/home/tozman99/Desktop/Blog/Comment_app/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "/home/tozman99/Desktop/Blog/Comment_app/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "/home/tozman99/Desktop/Blog/Comment_app/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 58,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								58
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								101,
+								101
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Blog.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "res",
+		"selected_items":
+		[
+			[
+				"res",
+				"~/Desktop/Tuto_restFull_API/restFul_API_tuto/rest_app/migrations/__init__.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,18 @@
+{% extends "base.html"%}
+{% block content%}
+
+
+<a class="le_btn" href="{% url 'Post_app:Post_Form' %}">Creer un poste</a>
+	<ul>
+	{% for post in object %}
+
+		<div>
+			<p><a href="{{post.slug}}">{{post.title}}</a> - {{post.date}} - 
+			<p>{{post.post}}</p>
+		</div>
+
+	{% endfor %}
+	</ul>
+
+
+{% endblock%}

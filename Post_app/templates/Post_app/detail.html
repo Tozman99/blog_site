@@ -1,0 +1,58 @@
+
+
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title%}{{object.title}}{% endblock %}</title>
+</head>
+<body>
+
+{% block content %}
+	
+		<h3 class="Le_Titre">{{object.title}} - {{object.date}}</h3>
+		<p>{{object.post}}</p>
+		<div class="nom_auteur">post cree par : {{object.auteur}}</div>
+		
+		{% if object.auteur == profile_object %}
+	<div class="div_contain">
+		
+			<a href="{% url 'Post_app:Post_Update' object.slug %}">Modify</a>
+			<a href="{% url 'Post_app:Post_Delete' object.slug %}">Remove</a>
+
+		{% else %}
+
+		<div class="div_contain">Vous n'etes pas autorise a modifier ou supprimer le poste de  {{object.auteur}}
+		{% endif %}
+		<p><a href="{% url 'Post_app:list_post' %}">Revenir a la liste</a></p></div>
+		
+
+
+	</div>
+
+
+	<form method="POST">
+		{% csrf_token %}
+		{{Comment_Form.as_p}}
+		<input type="Submit" value="Enter" class="le_btn">
+	</form>
+
+	<p> Comment Section</p>
+
+	{% for comment in Comments%}
+
+<p style="					border-style: solid;
+				border-width:1px;
+				border-color: #FAFAFA;
+				background-color: #f2f2f2;
+">{{comment.comment}}</p>
+			<div class="auteur_comment" >
+
+				<a href="{% url 'User_app:Other_User_View' comment.auteur_comment.id %}">{{comment.auteur_comment}}</a> -{{comment.date}}</div>
+		
+	{% endfor %}
+		
+{% endblock %}
+
+</body>
+</html>

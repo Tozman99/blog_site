@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+
+
+{% block content %}
+<form method="POST" class="login_form">
+	{% csrf_token %}
+	<p>Login</p>
+	{{form.as_p}}
+		<input type="submit" name="Enter" class="le_btn">
+						
+		<small style="font-size:12px;"><a href="{% url 'password-reset' %}">Forgot your Password ?</a></small>
+</form>
+
+{% endblock %}

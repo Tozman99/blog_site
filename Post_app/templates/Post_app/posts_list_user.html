@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+<html>
+<body>
+{% block content %}
+	<span>Vous avez ecrit: {{posts_user|length}} post(s)</span>
+	{% for post in posts_user %}
+		<h3 class="Le_Titre"><a href="{% url 'Post_app:Detail_Post' post.slug %}">{{post.title}}</a></h3>
+		<p>{{post.post}}</p>
+	{% endfor %}
+
+</body>
+{% endblock %}
+</html>
