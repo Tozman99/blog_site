@@ -23,6 +23,37 @@
 </style>
 <body style="background-color: #D8D8D8;">
   
+  <div class="navbar flex-container">
+				<div class="navbar-item item1">
+					<a class="navbar-brand" href="{% url 'Post_app:list_post' %}">  <img src="{% static 'images/Logo.jpg' %}" alt="dialogue">
+					</a>
+				</div>
+				<div class="navbar-item item2 nav-search">
+					<a class="nav-link" href="{% url 'Post_app:search_post' %}" ><p class="nav-search"></p></a>
+
+				</div>
+				<div class="navbar-item item3">
+					<a class="nav-link" href="#" style=>Trends</a>
+
+				</div>
+				{% if user.is_authenticated %}
+
+				<div class="navbar-item itemuserProfile">
+					<a href="{% url 'User_app:profile'%}">Profile</a>
+					<a href="{% url 'User_app:logout'%}">Logout</a>
+				</div>
+				{% else %}
+
+				<div class="navbar-item item4">
+					<a class="nav-link" href="{% url 'User_app:registration' %}">Regitration </a>
+
+				</div>
+				<div class="navbar-item item5">
+					<a class="nav-link" href="{% url 'User_app:login' %}" >Login</a>
+
+				</div>
+				{% endif %}
+  
 <div class="flex-container" >
 
   
