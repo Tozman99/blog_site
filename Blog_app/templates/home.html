@@ -1,0 +1,41 @@
+<!doctype html>
+{% extends "base.html" %}
+{% block content %}
+
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+  .flex-container > div, img {
+    background-color: #FFFFFF;
+    font-size: 30px;
+    font-family: "Bebas Neue", cursive;
+  }
+
+  .navbar{
+    background-color: #ffffff;
+  }
+</style>
+<body style="background-color: #D8D8D8;">
+  
+<div class="flex-container" >
+
+  
+  <img src="{% static 'images/Logo.jpg' %}" alt="dialogue">
+  <img src="{% static 'images/crayon.jpg' %}" alt="stats">
+  <img src="{% static 'images/marteau.jpg' %}" alt="stats">
+  <img src="{% static 'images/stats.jpg' %}" alt="stats">
+  <img src="{% static 'images/flamme.jpg' %}" alt="stats">
+</div>
+  <script>
+
+      
+  </script>
+</body>
+{% endblock %}
+</html>

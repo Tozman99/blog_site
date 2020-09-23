@@ -2,13 +2,41 @@
 
 
 {% block content %}
-<form method="POST" class="login_form">
-	{% csrf_token %}
-	<p>Login</p>
-	{{form.as_p}}
-		<input type="submit" name="Enter" class="le_btn">
-						
-		<small style="font-size:12px;"><a href="{% url 'password-reset' %}">Forgot your Password ?</a></small>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body{
+		background-color: #f7f7f7;
+	}
+	.loginForm{
+		width: 450px;
+		height: 400px;
+		margin: 20px 0px 0px 400px;
+		background-color: #ffffff;
+		border-radius: 25px;
+		box-shadow: 0 0 3px 1px #292929;
+
+	}
+</style>
+
+</head>
+<body>
+	<div class="loginForm">
+		<form method="POST" class="login_form">
+			{% csrf_token %}
+			<p>Login</p>
+			{{form.as_p}}
+				<input type="submit" name="Enter" class="le_btn">
+								
+				<small style="font-size:12px;"><a href="{% url 'password-reset' %}">Forgot your Password ?</a></small>
+		</form>
+	</div>
+
+</body>
+</html>
+
+
 
 {% endblock %}
+

@@ -34,7 +34,7 @@ def User_Registration_View(request):
 			message = ("Hello there", "This is an automated message", EMAIL_HOST_USER, [user_mail])
 			send_mail("Hello there", "Hello, This is Your username: {} and your password {}".format(request.POST["username"], request.POST["password1"]), EMAIL_HOST_USER, [user_mail])
 
-		return HttpResponseRedirect("../login")
+			return HttpResponseRedirect("../login")
 
 	return render(request, "registration/signup.html", {"form":form})
  
