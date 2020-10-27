@@ -37,7 +37,7 @@ class Comment_Post(models.Model):
 
 	class Meta:
 
-		ordering = ["date", "likes"]
+		ordering = ["date"]
 
 	def __str__(self):
 

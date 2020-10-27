@@ -1,0 +1,88 @@
+
+
+body{
+    text-align: center;
+    background-color: #ebebeb;
+    
+}
+
+.loginForm{
+    width: 300px;
+    height: 300px;
+    margin: 40px 0px 0px 450px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    text-align: center;
+    padding: 30px 30px;
+    
+
+}
+.item-login{
+    list-style-type:none;
+}
+.formelement{
+    background-color: #ffffff;
+
+}
+
+.item-field{
+    border-radius: 25px;
+    margin: 45px 40px;
+
+ 
+}
+
+.le_btn {
+    position: relative;
+    display: inline-block;
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid;
+    border-radius: 6px;
+    appearance: none;
+    background-color: #32CD33;
+    color:#ffffff;
+    width: 250px;
+    
+
+}
+.inputs_fields{
+    margin: 70px 10px;
+}
+a:visited { text-decoration: none; color:#0000FF; }
+a:hover { text-decoration: none; color:#0000FF; }
+a:focus { text-decoration: none; color:#0000FF; }
+a:hover, a:active { text-decoration: none; color:#0000FF; }
+
+a {
+    font-weight: 500;
+    text-decoration:none;
+    bottom:0;
+
+}
+
+.forgot_password_container{
+
+    padding-bottom: 15px;
+    position: relative;
+
+    
+}
+
+.registration_link{
+    
+    padding: 15px 20px;
+    text-align: center;
+    border: 1px solid #d8dee2;
+    border-radius: 10px;
+    margin: 20px 450px 0px 450px;
+    background-color: #ffffff;
+
+
+}

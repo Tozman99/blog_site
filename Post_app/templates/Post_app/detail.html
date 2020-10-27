@@ -1,57 +1,98 @@
 
-
-{% extends "base.html" %}
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 <title>{% block title%}{{object.title}}{% endblock %}</title>
+<link rel="stylesheet" href="{% static 'css/uniquepost.css' %}">
 </head>
 <body>
 
 {% block content %}
-	
-		<h3 class="Le_Titre">{{object.title}} - {{object.date}}</h3>
-		<p>{{object.post}}</p>
-		<div class="nom_auteur">post cree par : {{object.auteur}}</div>
-		
-		{% if object.auteur == profile_object %}
-	<div class="div_contain">
-		
-			<a href="{% url 'Post_app:Post_Update' object.slug %}">Modify</a>
-			<a href="{% url 'Post_app:Post_Delete' object.slug %}">Remove</a>
 
-		{% else %}
+	<div class="post_user">
+		<div class="nom_auteur">
+			<img src="{{ post.auteur.image.url }}" alt="User Image">
+			<a href="{% url 'User_app:Other_User_View' object.auteur.id %}">{{object.auteur}}</a>
+		</div>
 
-		<div class="div_contain">Vous n'etes pas autorise a modifier ou supprimer le poste de  {{object.auteur}}
-		{% endif %}
-		<p><a href="{% url 'Post_app:list_post' %}">Revenir a la liste</a></p></div>
-		
+		<div class="post_container">
+			<div class="Le_Titre">{{object.title}}</div>
+			<p>{{object.post}}</p>
+			{% if user.is_authenticated %}
+				{% if object.auteur == profile_object %}
+				
+				<div class="div_contain">
+					
+					<div class="navcontainerelem" id="containermodify">
+
+						<a href="{% url 'Post_app:Post_Update' object.slug %}">Modify</a>
+					</div>
+						
+						<div  class="navcontainerelem" id="containerremove">
+							<a href="{% url 'Post_app:Post_Delete' object.slug %}">Remove</a>
+						</div>
+					{% else %}
+
+					{% endif %}
+			{% endif %}
+
+			</div>
+			<small class="date">{{object.date}}</small>
+
+
+		</div>
 
 
 	</div>
-
-
-	<form method="POST">
-		{% csrf_token %}
-		{{Comment_Form.as_p}}
-		<input type="Submit" value="Enter" class="le_btn">
-	</form>
-
 	<p> Comment Section</p>
+<hr>
+	{% if user.is_authenticated %}
+		<form method="POST">
+			{% csrf_token %}
+			{% for field in Comment_Form %}
 
-	{% for comment in Comments%}
+			<div class="fieldWrapper">
+				
+				<div class="form_field">{{ field }}</div>
 
-<p style="					border-style: solid;
-				border-width:1px;
-				border-color: #FAFAFA;
-				background-color: #f2f2f2;
-">{{comment.comment}}</p>
-			<div class="auteur_comment" >
+			</div>
 
-				<a href="{% url 'User_app:Other_User_View' comment.auteur_comment.id %}">{{comment.auteur_comment}}</a> -{{comment.date}}</div>
-		
+			
+			{% endfor %}
+			<input type="Submit" value="Enter" class="le_btn">
+
+
+		</form>
+	{% endif %}
+
+<div class="noticecontainer">
+
+	<div>
+		<div class="revenirListe"><a href="{% url 'Post_app:list_post' %}">Revenir a la liste</a></div>
+
+	</div>
+	<div class="CommentSection">
+	{% for comment in Comments %}
+
+		<div class="comment_container">
+			<div class="comment_image">
+				<img src="{{ comment.auteur_comment.image.url }}" alt="userImage">
+			</div>
+			<div class="comment_data">
+				<a href="{% url 'User_app:Other_User_View' comment.auteur_comment.id %}">{{comment.auteur_comment}}</a>
+				<small class="date_comment">{{comment.date}}</small>
+
+			<p>{{comment.comment}}</p>
+				<div class="auteur_comment" >
+
+				</div>
+			</div>
+		</div>
 	{% endfor %}
-		
+
+	</div>
+</div>
 {% endblock %}
 
 </body>

@@ -1,8 +1,17 @@
+{% load static %}
 {% block content %}
+<head>
+<link rel="stylesheet" href="{% static 'css/uniquepost.css' %}">
+</head>
+
+<body>
 
 <form method="post">{% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Update">
+    <input type="submit" value="Update" class="le_btn">
 </form>
 
-{% endblock %}
+<div class="revenirListe"><a href="{% url 'Post_app:list_post' %}">Revenir a la liste</a></div>
+
+{% endblock %}   
+</body>

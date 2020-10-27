@@ -1,42 +1,41 @@
-{% extends "base.html"%}
+<!--{% load socialaccount %} -->
 
 
 {% block content %}
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-	body{
-		background-color: #f7f7f7;
-	}
-	.loginForm{
-		width: 450px;
-		height: 400px;
-		margin: 20px 0px 0px 400px;
-		background-color: #ffffff;
-		border-radius: 25px;
-		box-shadow: 0 0 3px 1px #292929;
+	<link rel="stylesheet" href="{% static 'css/login.css' %}">
 
-	}
-</style>
 
 </head>
 <body>
 	<div class="loginForm">
-		<form method="POST" class="login_form">
+		<form method="POST" class="formelement">
 			{% csrf_token %}
-			<p>Login</p>
-			{{form.as_p}}
+			{% for field in form %}
+			<li class="item-login item-field">
+			<span class="custom_label">{{field.label_tag}}</span> {{ field }}
+			</li>
+			{% endfor %}
+			<li class="item-login inputs_fields">
 				<input type="submit" name="Enter" class="le_btn">
+			
+				<small class="forgot_password_container" style="font-size:12px;"><a class="password-reset" href="{% url 'password-reset' %}">Forgot your Password ?</a></small>
+			</li>
 								
-				<small style="font-size:12px;"><a href="{% url 'password-reset' %}">Forgot your Password ?</a></small>
 		</form>
-	</div>
+		
 
+	</div>
+	<div class="registration_link">
+		No Account? <a href="{% url 'User_app:registration' %}"> Create an account</a>
+	</div>
+	
 </body>
 </html>
-
-
 
 {% endblock %}
 

@@ -4,58 +4,219 @@
 	<html>
 	<head>
 	<title>{% block title%}{% endblock %}</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 	<body>
+		<div id="navbar" class="flex-container">
+			<div id="navcontainer1">
+				{% if user.is_authenticated %}
+				<a href="{% url 'Post_app:list_post' %}"><img src="{% static 'images/Logo.jpg' %}" alt="logo"></a>
+				{% else %}
+				<a href="{% url 'User_app:login' %}"><img src="{% static 'images/Logo.jpg' %}" alt="logo"></a>
+				{% endif %}
 
-			<nav class="navbar navbar-expand-lg navbar-light bg-light flex-container" id="navbar-contain">
-		  <a class="navbar-brand" href="{% url 'Post_app:list_post' %}">  <img src="{% static 'images/Logo.jpg' %}" alt="logo">
-		  </a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-		    <ul class="navbar-nav">
-			  <!--
-				<li class="nav-item">
-		        <a class="nav-link" href="{% url 'Post_app:list_user_post'%}" style=>Your posts</a>
-			  </li>
-			-->
-		      <li class="nav-item">
-		        <a class="nav-link" href="#"><p class="nav-search"><input type="text"> <input type="submit"></button></p></a>
-			  </li>
-			  <li class="nav-item">
-		        <a class="nav-link" href="#" style=>Trends</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#"></a>
-			  </li> 
-			      {% if user.is_authenticated%}
-			     <li class="nav-item dropdown">
-					    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{request.user}}</a>
+			</div>
+			<div id="navcontainer2" class="search">
+				<form>
+				<span class="searchbarspan"><input type="text" id="input_1" name="q" placeholder="Find a post..." >
+				<button type="submit" id="btn_search"><img src="{% static 'images/buttonsearch.png' %}" alt="search button"></button>
+				</span>
+
+				</form>
+			</div>
+			{% if user.is_authenticated %}
+			<div class="navcontainerelem" id="containerprofile">
 					
-					    <div class="dropdown-menu">
-					      <a class="dropdown-item" href="{% url 'User_app:profile'%}">Profile</a>
-					      <a class="dropdown-item" href="{% url 'User_app:logout'%}">Logout</a>
-					    </div>
-					  </li>
-			      {% else %}
-			       <li class="nav-item">
-		        		<a class="nav-link" href="{% url 'User_app:registration' %}">Regitration </a>
-		      		</li> 
-		      		<li class="nav-item">
-		        		<a class="nav-link" href="{% url 'User_app:login' %}" >Login</a>
-		      		</li>
-			      
-			      {% endif %}
-			       
-		    </ul>
-		  </div>
-		</nav>
+				<a href="{% url 'User_app:profile'%}">profile</a>
+					
+			</div>
+			<div  class="navcontainerelem" id="containerlogout">
+				<a href="{% url 'User_app:logout'%}">logout</a>
+					
+			</div>
+			
+
+			{% else %}
+				<div class="navcontainerelem signupbtn" id="containersignup">
+					<a class="nav-link" href="{% url 'User_app:registration' %}">Sign up </a>
+				</div>
+				<div class="navcontainerelem loginbtn">
+					<a class="nav-link" href="{% url 'User_app:login' %}">Login</a>
+				</div>
+			{% endif %}
+
+
+		</div>
+		<ul id="discuss_list">
+
+		</ul>
+
+
+
+<script>
+	/*
+
+	// navbar fixed to the top
+	window.onscroll = function() {myFunction()};
+	
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	}
+	function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+*/
+</script>
+
+
+		<script>
+			
+			// get data for the navbar and display it 
+			var input = document.getElementById("input_1");
+
+			const fetchPromise = fetch('http://127.0.0.1:8000/api/posts.json');
+			fetchPromise.then(response => {
+			setTimeout(response, 2000);
+			return response.json();
+			}).then(posts => {
+			var nbreChildren = 0;
+			var inputValue;
+			postsArray = getPosts(posts);
+			console.log(postsArray);
+			document.getElementById("input_1").addEventListener("keyup",event => { 
+				//
+				inputValue = getInputValue();
+				filteredposts = showHint(inputValue.toLowerCase(), postsArray);
+				//console.log(`list post filtered ${filteredposts}`)
+				removeElement();
+				createPosts(filteredposts, nbreChildren);
+
+			});
+
+			
+			});
+		function getInputValue(){
+			
+			var input = document.getElementById("input_1");
+			var inputValue = input.value;
+			
+			return inputValue;
+		}
+		removeElement = () => {
+					const myNode = document.getElementById("discuss_list");
+					while (myNode.firstChild) {
+						console.log(`${myNode.firstChild}`)
+						myNode.removeChild(myNode.lastChild);
+					}
+			}
+		
+	
+		function getPosts(posts){
+			var posts_array = [];
+	
+			for (var i=0; i < posts.length;i++){
+				post = posts[i]["title"];
+				posts_array[i] = post;
+	
+			}
+	
+			return posts_array;
+	
+		}
+	
+		function createPosts(postsArray, nbreChildren){
+
+			let orderlist = document.getElementById("discuss_list");
+			for (var i=0; i<postsArray.length; i++){
+				
+				if (nbreChildren <= postsArray.length){
+				
+				var li = document.createElement('LI');
+				li.innerHTML = ` <a><button>${postsArray[i]}</button></a>`;
+				// set style
+				li.style.font = "bold 20px lato,serif";
+				li.style.width = "300px";
+				li.style.textAlign = "center";
+				li.style.backgroundColor = "white";
+				li.style.paddingLeft = "-10px";
+				li.style.marginBottom = "-10px";
+				li.style.cursor = "pointer";
+				// better to use CSS though - just set class
+				li.setAttribute('class', `element-discussion_${nbreChildren}`); // and make sure myclass has some styles in css
+				document.getElementById("discuss_list").appendChild(li);
+				addEventli(li);
+				nbreChildren++;
+				
+				}
+			}
+			
+		}
+		function addEventli(li){
+			li.addEventListener("click", element => {
+				changevalueInput(li);
+				document.getElementById("btn_search").click();
+
+
+			})
+		}
+		
+		function showHint(str, posts) {
+				
+				var filtered_posts = [];
+				if (str.length == 0) {
+					filterd_posts = posts;
+					return [];
+
+				} 
+
+				else {
+						var index = 0;
+						while (index < posts.length){
+
+							var post = posts[index];
+							if (post.startsWith(str.toLowerCase())){
+								filtered_posts.push(post);
+							
+							}	
+							index++;	
+						}
+						return filtered_posts;
+					};
+				}
+		
+		function changevalueInput(li){
+			var input = document.getElementById("input_1");
+			var value = document.querySelector(`.${li.className} > a`);
+			input.value = value.text;
+		}
+				
+		
+	</script>
+	
 
 	{% block content %}
 

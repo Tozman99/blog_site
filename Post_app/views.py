@@ -13,6 +13,8 @@ from django.views.generic.edit import UpdateView, DeleteView
 from django.forms import modelform_factory
 from django.views.generic import FormView
 from django.views import View
+from django.http.request import QueryDict
+
 
 # Create your views here.
 
@@ -34,13 +36,24 @@ class Post_List_View(ListView):
 	template_name = "Post_app/list.html"
 
 	def queryset(self):
-		pass
+		
+		return Post.objects.all()
 
 	def get_context_data(self, **kwargs):
 
 		context = super().get_context_data(**kwargs)
-		context["object"] = Post.objects.all()
 		
+		query_key = "q"
+		get_url_kwargs = self.request.GET.get(query_key)
+		if get_url_kwargs:
+			
+			context["object"] = Post.objects.filter(title__contains=get_url_kwargs)
+			#print(context["object"], self.request.GET.get(query_key))
+
+		else:
+			context["object"] = Post.objects.all()
+		
+
 		return context
 
 
@@ -54,6 +67,8 @@ class Post_Detail_View(DetailView):
 		context["profile_object"] = obj_profile
 		context["Comment_Form"] = Comment_Form()
 		context["Comments"] = Comment_Post.objects.filter(post=self.object)
+		print(self.kwargs)
+
 		return context 
 
 class Post_Form_CreateView(LoginRequiredMixin, CreateView):
@@ -94,11 +109,13 @@ def search_post(request):
 	form = postForm()
 	objs = Post.objects.all()
 	if request.method == "POST":
-
 		form = postForm(request.POST)
+		
 		if form.is_valid():
 			objs = Post.objects.filter(title__contains=request.POST["title"])
 
+			return render(request, "Post_app/search_post.html", {"form_search": form, "objects":objs})
+	
 	return render(request, "Post_app/search_post.html", {"form_search":form, "objects":objs})
 	
 

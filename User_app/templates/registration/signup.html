@@ -1,33 +1,88 @@
+{% load static %}
+<head>
+
+  <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap" rel="stylesheet">
+  
+</head>
+<body>
 
 {% block content %}
-<form method="POST">
-  	{% csrf_token %}
-  	{% for field in form %}
-    <p>
-      {{ field.label_tag }}<br>
-      {{ field }}
-      {% if field.help_text %}
-        <small style="color: grey">{{ field.help_text }}</small>
-      {% endif %}
-      {% for error in field.errors %}
-        <p style="color: red">{{ error }}</p>
-      {% endfor %}
-    </p>
-  {% endfor %}
-      
-  <input type="submit" value="Sign in" style="
-            background-color:#44c767;
-            border-radius:28px;
-            border:1px solid #18ab29;
-            display:inline-block;
-            cursor:pointer;
-            color:#ffffff;
-            font-family:Arial;
-            font-size:17px;
-            padding:6px 20px;
-            margin:10px 80px;
-            text-decoration:none;
-            text-shadow:0px 1px 0px #2f6627;">
-</form>
+
+
+<div class="main_block flex-container">
+
+  <div class="first_block">
+
+    <p>Sign Up and Write your first post</p>
+
+  </div>
+  
+  <div class="second_block">
+
+    <form method="POST" class="registration_form">
+
+        {% csrf_token %}
+        
+      <div class="allField">
+        <div class="fieldWrapper">
+          {{ form.username.errors }}
+          <p class="label_form"><label for="{{ form.username.id_for_label }}">Username </label></p>
+          <div class="form_field">{{ form.username }}</div>
+      </div>
+      <div class="fieldWrapper">
+        {{ form.password1.errors }}
+        <p class="label_form"><label for="{{ form.password1.id_for_label }}">password </label></p>
+        <div class="form_field">{{ form.password1 }}</div>
+    </div>
+    <div class="fieldWrapper">
+      {{ form.password2.errors }}
+      <p class="label_form"><label for="{{ form.password2.id_for_label }}">Confirm password </label></p>
+      <div class="form_field">{{ form.password2 }}</div>
+    </div>
+    <div class="fieldWrapper">
+      {{ form.email.errors }}
+      <p class="label_form"><label for="{{ form.email.id_for_label }}">Email </label></p>
+      <div class="form_field">{{ form.email }}</div>
+    </div>
+    <div class="fieldWrapper">
+      {{ form.first_name.errors }}
+      <p class="label_form"><label for="{{ form.first_name.id_for_label }}">First name </label></p>
+      <div class="form_field">{{ form.first_name }}</div>
+    </div>
+    <div class="fieldWrapper">
+      {{ form.last_name.errors }}
+      <p class="label_form"><label for="{{ form.last_name.id_for_label }}">Last name </label></p>
+      <div class="form_field">{{ form.last_name }}</div>
+    </div>
+  </div>
+          
+      <input type="submit" value="Sign in" style="
+    position: relative;
+    display: inline-block;
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid;
+    border-radius: 6px;
+    appearance: none;
+    background-color: #32CD33;
+    color:#ffffff;
+    width: 260px;">
+    
+    <small><a href="{% url 'User_app:login' %}">Already an Account?</a></small>
+
+    </form>
+
+  </div>
+</div>
+
+
+</body>
 
 {% endblock %}

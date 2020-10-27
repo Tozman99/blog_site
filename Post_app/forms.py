@@ -16,3 +16,4 @@ class Comment_Form(ModelForm):
 		
 		model = Comment_Post
 		exclude = ["post", "auteur_comment", "likes"]
+		

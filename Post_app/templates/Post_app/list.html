@@ -1,18 +1,52 @@
-{% extends "base.html"%}
-{% block content%}
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<head>
+
+	<link rel="stylesheet" href="{% static 'css/postslist.css' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
 
 
-<a class="le_btn" href="{% url 'Post_app:Post_Form' %}">Creer un poste</a>
-	<ul>
-	{% for post in object %}
+</head>
+<body>
 
-		<div>
-			<p><a href="{{post.slug}}">{{post.title}}</a> - {{post.date}} - 
-			<p>{{post.post}}</p>
+<div class="listpage">
+	<div class="flex-container-list">
+		<div class="createpost">
+			<a class="le_btn" href="{% url 'Post_app:Post_Form' %}">Create a post</a>
+
 		</div>
+		<div class="body-postList">
 
-	{% endfor %}
-	</ul>
 
+				<div class="postsList">
+					{% for post in object %}
+
+						<div class="unique_post">
+							<div class="userprofile"><img src="{{ post.auteur.image.url }}" alt="User Image "> <span class="auteurName"><a href="{% url 'User_app:Other_User_View' post.auteur.id %}">{{post.auteur}}</a></span></div>
+							<p class="title"><a href="{% url 'Post_app:Detail_Post' post.slug %}">{{post.title}}</a></p>
+							
+							<p class="postcontent">{{post.post}}</p>
+							<div class="date"><small>{{post.date}}</small></div>
+						</div>
+
+					{% endfor %}
+
+					</div>
+					
+		</div>
+		<div>
+
+		</div>
+	</div>
+
+</div>
+</body>
 
 {% endblock%}
+
+
+
+

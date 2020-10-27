@@ -1,0 +1,173 @@
+.flex-container-list{
+
+    margin-top: 52px;
+}
+.userprofile > img{
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 80%;
+}
+
+.flex-container-list{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.flex-container-list > div{
+    width: 50%;
+    position: relative;
+    
+}
+.body-postList{
+    width: 40%;
+}
+.postsList{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.postsList > div {
+
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+.body-postList{
+    background-color: #ffffff;
+}
+
+.createpost{
+    text-align: left;
+   
+}
+.unique_post > img {
+    border: 1px solid black;
+    width: 30px;
+}
+
+.unique_post > .userprofile {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.unique_post > .date {
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.unique_post > .postcontent {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+
+}
+
+.unique_post > .title {
+
+    padding-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.unique_post{
+    word-wrap: break-word;
+}
+.le_btn{
+    background-color: #FFD700;
+	  color: #ffffff;
+	  margin-bottom: 11px;
+	  width: 100px;
+    border-radius: 5px;
+    text-decoration:none;
+    padding-bottom: 6px;
+    position:fixed;
+	
+}
+
+.unique_post > p >  a:link {
+    color: #32CD33;
+  }
+  
+.unique_post > p > a:visited {
+    color: #32CD33;
+  }
+  
+  /* mouse over link */
+.unique_post > p > a:hover {
+    color: #32CD33;
+  }
+  
+  /* selected link */
+.unique_post > p > a:active {
+    color: #32CD33;
+  }
+
+
+  .le_btn:link {
+    color: #ffffff;
+  }
+  
+.le_btn:visited {
+    color: #ffffff;
+  }
+  
+  /* mouse over link */
+.le_btn:hover {
+    color: #ffffff;
+  }
+  
+  /* selected link */
+.le_btn:active {
+    color: #ffffff;
+}
+
+
+  .auteurName > a:link {
+    color: black;
+    text-decoration: none;
+    font-family: 'open sans';
+    font-size: 14px;
+}
+  
+  .auteurName > a:visited {
+    color: black;
+    text-decoration: none;
+    font-family: 'open sans';
+    font-size: 14px;
+
+
+  }
+
+  .auteurName > a:visited:hover{
+    color: #32CD33;
+    text-decoration: none;
+    font-family: 'open sans';
+    font-size: 14px;
+  }
+  
+  /* mouse over link */
+  .auteurName > a:hover {
+    color: #32CD33;
+    text-decoration: none;
+    font-family: 'open sans';
+    font-size: 14px;
+
+  }
+  
+  /* selected link */
+  .auteurName > a:active {
+    color: black;
+    text-decoration: none;
+    font-family: 'open sans';
+    font-size: 14px;
+
+
+  }

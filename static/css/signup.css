@@ -1,0 +1,77 @@
+
+body{
+    background-color: #24292e;
+    margin: 0px;
+
+}
+
+.registration_form{
+    text-align:center;
+    background-color: #ffffff;
+    padding: 10px 30px 30px 30px;
+    border-radius: 25px;
+    margin-bottom: 0px;
+    margin-top: 4px;
+
+}
+
+.flex-container{
+    display:flex;
+    margin: 0px;
+}
+
+.flex-container > div {
+    padding: 0px 180px 0px 150px;
+
+  }
+
+
+.first_block > p {
+
+    font-family: 'Piazzolla', serif;
+    font-size: large;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 45px;
+}
+
+
+.form_field{
+    width: 100px;
+    
+}
+.label_form{
+   
+    text-align:left;
+  }
+
+.inputField{
+
+    border-radius: 4px;
+    width: 260px;
+    height:40px;
+
+}
+
+#id_password2, #id_password1{
+    border-radius: 4px;
+    width: 260px;
+    height:40px;
+
+}
+
+.allField{
+    padding-bottom: 10px;
+}
+
+a:visited { text-decoration: none; color:#0000FF; }
+a:hover { text-decoration: none; color:#0000FF; }
+a:focus { text-decoration: none; color:#0000FF; }
+a:hover, a:active { text-decoration: none; color:#0000FF; }
+
+a {
+    font-weight: 500;
+    text-decoration:none;
+    bottom:0;
+
+}

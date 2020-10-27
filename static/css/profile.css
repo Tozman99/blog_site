@@ -1,0 +1,129 @@
+
+img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.card{
+    box-shadow: 0 15px 40px 0px rgba(150,170,180,0.5);;
+    margin: 100px 320px;
+    text-align:center;
+    border-radius: 5px;
+
+
+}
+
+.card > img{
+    border: 1px solid black;
+
+}
+.photocard{
+    border: 1px solid black;
+
+}
+.fields_block{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fields_block > div{
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+.fields_block > div > span{
+    display: inline-block;
+    padding: 10px 0px 0px 350px;
+    font-family: 'Lato', sans-serif;
+
+
+   
+}
+
+.fields_block > div > label{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#id_image{
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+   
+}
+
+.thebtn{
+    background-color: #32CD33;
+	color: #ffffff;
+    width: 100px;
+	border-radius: 5px;
+}
+
+.Imagebtn{
+    box-shadow: 0 15px 40px 0px rgba(150,170,180,0.5);
+    padding: 10px;
+    margin: 0px 500px;
+    border-radius: 5px;
+    text-align:center;
+
+}
+
+.other_btn{
+    
+    display: flex;
+    flex-wrap: nowrap;
+
+
+
+}
+
+.other_btn > div {
+    width: 100px;
+    margin: 0px 200px;
+    padding: 12px;
+    width: 300px;
+
+}
+
+.other_link > span{
+    display: inline-block;
+    width:350px;
+}
+
+.other_link > span > a{
+
+    margin-left: 5px;
+    margin-bottom: 10px;
+    
+}
+
+#other_link1{
+    background-color: #FFD700;
+	color: #ffffff;
+	margin-bottom: 11px;
+	width: 100px;
+    border-radius: 5px;
+    text-decoration:none;
+    padding-bottom: 6px;
+
+
+}
+
+#other_link2{
+    background-color: #ffffff;
+	margin-bottom: 11px;
+	width: 100px;
+	border-radius: 5px;
+	border: 1px solid #32CD33;
+    padding-top: 1px;
+    text-decoration:none;
+    color: #32CD33;
+    padding-bottom: 6px;
+
+}

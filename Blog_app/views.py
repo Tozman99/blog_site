@@ -4,5 +4,9 @@ from django.shortcuts import render
 
 
 def home_view(request):
+
+    if request.method == "POST":
+        pass
+        #request.POST[f"query"] = 
     
     return render(request, "home.html", {})

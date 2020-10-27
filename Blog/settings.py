@@ -40,6 +40,15 @@ INSTALLED_APPS = [
     "Blog_app",
     "User_app",
     "Post_app",
+    "rest_framework",
+    'django.contrib.sites',   
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    "crispy_forms",
+
+
 ]
 
 MIDDLEWARE = [
@@ -50,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware'
 ]
 
 ROOT_URLCONF = 'Blog.urls'
@@ -65,6 +75,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',  # <--
+                'social_django.context_processors.login_redirect',
+                #'Post_app.context_processors.post',
             ],
         },
     },
@@ -128,8 +141,12 @@ EMAIL_USE_TLS = True
 
 
 LOGIN_URL = "/login"
-#LOGIN_REDIRECT_URL = "profile/"
+LOGOUT_URL = "/logout"
 
+LOGIN_REDIRECT_URL = "/post/ViewPost"
+LOGOUT_REDIRECT_URL = "/home"
+
+CRISPY_TEMPLATE_PACK = 'uni_form'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
@@ -146,4 +163,29 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 MEDIA_URL = "/media/"
+ACCOUNT_FORMS = {'signup': 'blog_site.User_app.forms.Signupallauth'}
+
+
+AUTHENTICATION_BACKENDS = (
+ 'django.contrib.auth.backends.ModelBackend',
+ 'allauth.account.auth_backends.AuthenticationBackend',
+
+ )
+
+SOCIAL_AUTH_FACEBOOK_KEY = '2685267411727400'  # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '6b3e88bd8fa36ae34897f78cbb016b17'  # App Secret
+
+SITE_ID = 1
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        }
+    }
+}
 

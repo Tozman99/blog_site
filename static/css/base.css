@@ -1,78 +1,197 @@
-html,body {
-	background-color:#FFFFFE;
-	color: rgba(112, 112, 112,0.7);
-	font-family:'lato','Arial',sans-serif;
-	font-weight:300;
-	font-size:20px;
-	text-rendering: optimizeLegibility;
-	overflow-x: hidden;
-
-}
 
 
-*{
-	margin:0;
-	padding:0;
-	-webkit-box-sizing:border-box;
-			box-sizing:border-box;
-
-}
-
-/*div{
-	margin-left:20;
-	padding-left:20;
-}
-*/
-p{
-	text-align: center;
-	font-size:15px;
-	padding:30px 80px;
-}
-
-.Le_Titre{
-	text-align: center;
-	font-size:25px;
-	margin-top:100px;
-}
-
-.div_contain{
-	font-size:12px;
-	text-align: right;
-	padding:20px 20px;
-
-
-}
-
-.nom_auteur{
-	text-align:right;
-	padding:5px 100px;
-	font-size:11px;
-}
-
-.auteur_comment{
-	text-align:right;
-	padding:5px 100px;
-	font-size:11px;
-	
-
-
-}
-nav{
-	padding-bottom:20px;
-}
-
-.login_form{
-	padding:30px 20px;
-	text-align: center;
-}
-.nav-search{
+.flex-container {
 	display: flex;
-	position: static;
-	background-color: #f51313;
+	flex-wrap: nowrap;
+	position:fixed;
+	z-index: 10;
+	box-shadow: 0 5px 15px rgba(60,70,80,.15), 0 15px 40px rgba(60,70,80,.08), 0 50px 100px rgba(60,70,80,.1);
+	margin-top: -8px;
+	margin-left: -10px;
+	background-color: #ffffff;
+}
+  
+  .flex-container > div {
+    font-size: 20px;
+	font-family: "Bebas Neue";
+	text-align: center;
+
+  }
+
+
+.search{
+	display: flex;
+	flex-direction: column;
 }
 
-.nav-item{
-	background-color: blue;
+.searchbarspan{
+	display: flex;
+}
+#btn_search{
+	margin-top: 8px;
+	background-color: #696969;
+	border-radius: 0 5px 5px 0;
+	border: 2px solid #696969;
+	border-style: solid solid solid none;
+	cursor: pointer;
+}
+
+#navcontainer2{
+	margin-left: 320px;
+}
+
+#input_1{
+
+	padding: 6px;
+	margin-top: 8px;
+	border: none;
+	font-size: 17px;
+	border: 2px solid #696969;
+	border-radius: 5px 0 0 5px;
+	width: 300px;
+
+}
+ /* Navbar CSS*/
+
+
+
+a:visited { text-decoration: none; color:#0000FF; }
+a:hover { text-decoration: none; color:#0000FF; }
+a:focus { text-decoration: none; color:#0000FF; }
+a:hover, a:active { text-decoration: none; color:#0000FF; }
+
+a {
+    font-weight: 500;
+    text-decoration:none;
+    bottom:0;
+
+}
+
+.navcontainerelem{
+
+	margin-left: 5px;
+	text-align: center;
+	font-weight: 100px;
+	font-size: 20px;
+	margin-top: 13px;
+	padding-top: 2px;
+
+
+}
+
+.navcontainerelem > a{
+	color: #696969;
+	font-family: 'Lato', sans-serif;
+}
+
+#containerprofile, #containersignup{
+	margin-left: 250px;
+}
+
+.signupbtn{
+	background-color: #32CD33;
+	color: #ffffff;
+	margin-bottom: 11px;
+	width: 100px;
 	border-radius: 5px;
-	align-self: center;
+}
+
+.signupbtn > a {
+	color: #ffffff;
+}
+
+.loginbtn{
+	background-color: #ffffff;
+	margin-bottom: 11px;
+	width: 100px;
+	border-radius: 5px;
+	border: 1px solid #32CD33;
+	padding-top: 1px;
+}
+
+.loginbtn > a {
+	color: #32CD33;
+}
+
+
+#containerprofile{
+	background-color: #330019;
+	color: #ffffff;
+	margin-bottom: 11px;
+	width: 100px;
+	border-radius: 5px;
+}
+
+#containerprofile > a {
+	color: #ffffff;
+}
+
+#containerlogout{
+	background-color: #ffffff;
+	margin-bottom: 11px;
+	width: 100px;
+	border-radius: 5px;
+	border: 1px solid #FF0000;
+	padding-top: 1px;
+}
+
+#containerlogout > a {
+	color: #FF0000;
+}
+
+
+#discuss_list{
+	position: fixed;
+	z-index: 10;
+	right: 0px;
+	margin: 50px 500px 0px 450px;
+	background-color: #ffffff;
+	padding-left: 0px;
+	padding-bottom: -5px;
+
+
+}
+#discuss_list > li{
+	list-style:none;
+	width: 100%;
+
+
+}
+#discuss_list > li > a{
+	
+    display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+#discuss_list > li > a > button{
+	display: block;
+	width: 100%;
+	height: 60px;
+	background-color: #ffffff;
+}
+
+#discuss_list > li > a > button:hover{
+	display: block;
+	width: 100%;
+	height: 60px;
+	background-color: #D3D3D3;
+}
+
+#discuss_list > li > a:link{
+    text-decoration: none;
+    background-color: #ffffff;
+}
+#discuss_list > li > a:hover{
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+#discuss_list > li > a:visited{
+    text-decoration: none;
+    background-color: #ffffff;
+}
+#discuss_list > li > a:active{
+    text-decoration: none;
+    background-color: #ffffff;
 }

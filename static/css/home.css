@@ -1,0 +1,132 @@
+
+
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	box-shadow: 0 5px 15px rgba(60,70,80,.15), 0 15px 40px rgba(60,70,80,.08), 0 50px 100px rgba(60,70,80,.1);
+	margin-top: -7px;
+	margin-left: -10px;
+	margin-right: -10px;
+	background-color: #ffffff;
+}
+  
+  .flex-container > div {
+    font-size: 20px;
+	font-family: "Bebas Neue";
+	text-align: center;
+
+  }
+
+#btn_search{
+	margin-top: 8px;
+	background-color: #696969;
+	border-radius: 0 5px 5px 0;
+	border: 2px solid #696969;
+	border-style: solid solid solid none;
+}
+
+
+
+ /* Navbar CSS*/
+
+
+
+a:visited { text-decoration: none; color:#0000FF; }
+a:hover { text-decoration: none; color:#0000FF; }
+a:focus { text-decoration: none; color:#0000FF; }
+a:hover, a:active { text-decoration: none; color:#0000FF; }
+
+a {
+    font-weight: 500;
+    text-decoration:none;
+    bottom:0;
+
+}
+
+.navcontainerelem{
+
+	margin-left: 5px;
+	text-align: center;
+	font-weight: 100px;
+	font-size: 20px;
+	margin-top: 13px;
+	padding-top: 2px;
+
+
+}
+
+.navcontainerelem > a{
+	color: #696969;
+	font-family: 'Lato', sans-serif;
+}
+
+#containerprofile, #containersignup{
+	margin-left: 922px;
+}
+
+.signupbtn{
+	background-color: #32CD33;
+	color: #ffffff;
+	margin-bottom: 11px;
+	width: 100px;
+	border-radius: 5px;
+}
+
+.signupbtn > a {
+	color: #ffffff;
+}
+
+.loginbtn{
+	background-color: #ffffff;
+	margin-bottom: 11px;
+	width: 100px;
+	border-radius: 5px;
+	border: 1px solid #32CD33;
+	padding-top: 1px;
+}
+
+.loginbtn > a {
+	color: #32CD33;
+}
+
+
+#containerprofile{
+	background-color: #330019;
+	color: #ffffff;
+	margin-bottom: 11px;
+	width: 100px;
+	border-radius: 5px;
+}
+
+#containerprofile > a {
+	color: #ffffff;
+}
+
+#containerlogout{
+	background-color: #ffffff;
+	margin-bottom: 11px;
+	width: 100px;
+	border-radius: 5px;
+	border: 1px solid #FF0000;
+	padding-top: 1px;
+}
+
+#containerlogout > a {
+	color: #FF0000;
+}
+
+.main-home{
+    display:flex;
+    flex-direction: row;
+}
+
+.main-home > div{
+	margin-left: 180px;
+	margin-top: 150px;
+	text-align: center;
+
+}
+
+.stepsentence{
+	font-family: 'Lato';
+}

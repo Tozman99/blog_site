@@ -24,9 +24,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("post/", include("Post_app.urls")),
     path("", include("User_app.urls")),
+    path("api/", include("api.urls")),
     path("password_reset/", auth_views.PasswordResetView.as_view(), name="password-reset"),
     path('password-reset/done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),
     path('password-reset-confirm/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
     path('password-reset-complete/', auth_views.PasswordResetCompleteView.as_view(), name='password_reset_complete'),
-    path("home/", Blog_views.home_view, name="home_view")
+    path("home/", Blog_views.home_view, name="home_view"),
+    path("accounts/", include('allauth.urls')),
+    #path("oauth/", include('social_django.urls', namespace='social')),
+
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -9,6 +9,8 @@ from .models import Profile
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from PIL import Image
+from django.shortcuts import redirect
+
 
 def home_view(request):
 	print(request)
@@ -31,8 +33,8 @@ def User_Registration_View(request):
 			Profile.objects.create(user=obj)
 
 			user_mail = request.POST["email"]
-			message = ("Hello there", "This is an automated message", EMAIL_HOST_USER, [user_mail])
-			send_mail("Hello there", "Hello, This is Your username: {} and your password {}".format(request.POST["username"], request.POST["password1"]), EMAIL_HOST_USER, [user_mail])
+			message = ("Hi", "This is an automated message", EMAIL_HOST_USER, [user_mail])
+			send_mail("Hi ", "This is Your username: {} and your password {},\n you can now login to your account Here: http://127.0.0.1:8000/login/".format(request.POST["username"], request.POST["password1"]), EMAIL_HOST_USER, [user_mail])
 
 			return HttpResponseRedirect("../login")
 
@@ -55,8 +57,8 @@ def profile_View(request):
 
 @login_required(login_url="/login/")
 def profile_logout_view(request):
-
-	return render(request, "registration/logout.html", {})
+	print("OK")
+	return redirect("home_view", name="home")
 
 def profile_other_user(request, id):
 

@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../../Downloads/Login_v2/css"
+		},
+		{
+			"path": "../../../../../Downloads/Login_v2/fonts"
+		},
+		{
+			"path": "../../../../../Downloads/Login_v2/images"
+		},
+		{
+			"path": "../../../../../Downloads/Login_v2/js"
+		},
+		{
+			"path": "../../../../../Downloads/Login_v2/vendor"
+		}
+	],
+	"settings": {}
+}
